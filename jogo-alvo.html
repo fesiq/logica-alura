@@ -9,6 +9,8 @@
     pincel.fillRect(0, 0, 600, 400);
 
     var raio = 10;
+    var xAleatorio;
+    var yAleatorio;
 
     function desenhaCirculo(x, y, raio, cor) {
 
@@ -40,8 +42,8 @@
 
     function atualizaTela() {
         limpaTela();
-        var xAleatorio = sorteiaPosicao(600);
-        var yAleatorio = sorteiaPosicao(400);
+        xAleatorio = sorteiaPosicao(600);
+        yAleatorio = sorteiaPosicao(400);
         desenhaAlvo(xAleatorio, yAleatorio);
     }
 
